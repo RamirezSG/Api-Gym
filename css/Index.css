@@ -1,0 +1,38 @@
+body{
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-style: italic;
+    background: linear-gradient(90deg, #F00808 10%, black 90%);
+    background: linear-gradient(135deg, rgba(208,208,205,0.75), rgba(139,143,143,0.75),rgba(241,12,15,1.00));
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+}
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.img.ratita{
+	position: relative;
+	top: 100px; left: 600px;
+}
+.btn.Encargado{
+    position: relative;
+    width: 30%;
+    height: 45px;
+    /*Vertical top, Horizontal left*/
+    top: 150px;
+    left: 550px;
+    color: #F5F5F5;
+    background-color: #000000;
+    font-family: fantasy;
+    font-size: 36px;
+}
+.btn.Admi{
+	position: relative;
+	width: 30%; height: 45px;
+	top: 200px; left: 550px;
+    color: #F5F5F5;
+    background-color: #000000;
+    font-family: fantasy;
+    font-size: 40px;
+}

@@ -1,0 +1,116 @@
+@charset "utf-8";
+	body{   /*toda mi pantalla*/
+    font-style: italic;
+    color: #000000;
+    background: linear-gradient(90deg, #000000 1%, #efb810 90%);
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-size: 24px;
+}
+.container.titulo{ /*cuadrado gris*/
+    position: relative;
+    background: #959595;
+    box-shadow: 12px 12px 24px #a6a814, -12px -12px 24px #eef21c; /* iluminación ajustada */
+    border-radius: 30px;
+    text-align: center;
+    width: 500px; /* ancho reducido */
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-size: 29px; /* tamaño de fuente reducido */
+    top: 36px; /* posición ajustada */
+    left: 435px;
+}
+
+.container.menu{ /*cuadrado gris*/
+    position: relative;
+    background: #959595;
+    box-shadow: 12px 12px 24px #a6a814, -12px -12px 24px #eef21c; /* iluminación ajustada */
+    border-radius: 30px;
+    text-align: center;
+    width: 500px; /* ancho reducido */
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-size: 20px; /* tamaño de fuente reducido */
+    top: 115px; /* posición ajustada */
+    left: -299px;
+}
+
+/*botno de agregar*/
+.button {
+  height: 50px;
+  width: 200px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #252525;
+  overflow: hidden;
+  border-radius: 30px;
+  color: #333;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-txt {
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #333;
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.button:hover {
+  box-shadow: 1px 1px 200px #252525;
+  color: #fff;
+  border: none;
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}
+
+/*fin de boton*/
+
+.raton1{
+    position: relative;
+    left: 759px;
+    top: -253px;
+}
+.raton2{
+    position: relative;
+    left: 605px;
+    top: -65px;
+}
+
+/*insertar imagen*/
+.container.imagen{
+    position: relative;
+    border: 10px;
+    border-radius: 0px 10px 10px 0px #000;
+    text-align: center;
+    width: 450px;
+    height: 350px;
+    left: 450px;
+    top: -451px;
+}
+.imagins{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    left: 10px;
+}
+
+.btn{
+    position: relative;
+    left: 20px;
+}
+
+/*fin del insertar imagen*/

@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Interfaz10</title>
+<link href="css/EmpleadoMostrar.css" rel="stylesheet" type="text/css">
+</head>
+
+	<script src= "js/Empleado.js"></script>
+<body>
+	<div id="ContenedorCirculo" class="contenedor fade-in">
+			<h1>Empleado</h1>
+			<p>Trabajar juntos es el exito !!!</p>
+	
+	</div>
+	<button class="boton3" onclick="regresar()">Regresar</button>
+	<div class="ImaFondo"></div>
+	<img src="Imagenes/icon4.png" alt="" width="60" height="61" class="Icono4"/>
+<input type="text" name="text" placeholder="Buscar empleado" class="input">
+	
+	<div id="mi-contenedor" class="contenedor Principal">
+    	<img src="Imagenes/icon3.png" alt="" width="60" height="61" class="icono3"/> 
+		<!-- Inputs agregados al contenedor -->
+		<div>
+			<label for="Id del empleado">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Id del empleado:</label>
+    		<input name="Id del empleado" type="text" disabled="disabled" id="Id del empleado" placeholder="Id de empleado">
+		</div>
+		
+    	<div>
+			<label for="nombre">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Nombre:</label>
+    		<input name="nombre" type="text" disabled="disabled" id="nombre" placeholder="Nombre">
+		</div>	
+		
+		<div>
+    		<label for="Apellido Paterno">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Apellido Paterno:</label>
+   			<input name="Apellido Paterno" type="text" disabled="disabled" id="Apellido Paterno" placeholder="Apellido Paterno">
+		
+	
+			<label for="Apellido Materno">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Apellido Materno:</label>
+    		<input name="Apellido Materno" type="text" disabled="disabled" id="Apellido Materno" placeholder="Apellido Materno">
+		</div>
+		
+		<div>
+    		<label for="Cargo">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Cargo:</label>
+    		<input name="Cargo" type="text" disabled="disabled" id="Cargo" placeholder="Cargo">
+		</div>
+		
+		<div>	
+			<label for="Sueldo">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Sueldo:</label>
+    		<input name="Sueldo" type="text" disabled="disabled" id="Sueldo" placeholder="Sueldo establecido">
+		</div>	
+
+    	<div>
+			<label for="Telefono">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Telefono:</label>
+    		<input name="Telefono" type="tel" disabled="disabled" id="Telefono" placeholder="Telefono personal">
+
+			<label for="Telefono de emergencia">&nbsp;Telefono de emergencia:</label>
+    		<input name="Telefono de emergencia" type="tel" disabled="disabled" id="Telefono de emergencia" placeholder="Telefono de emergencia">
+		</div>
+   
+		<div>
+			<label for="Direccion">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Direccion:</label>
+    		<input name="Direccion" type="text" disabled="disabled" id="Direccion" placeholder="EDireccion">
+		</div>
+	   
+		<div>
+	   		<label for="Fecha de Nacimiento">&nbsp; &nbsp;Fecha de Nacimiento:</label>
+    		<input name="Fecha de Nacimiento" type="date" disabled="disabled" id="Fecha de Nacimiento" placeholder="Fecha de Nacimiento">
+		</div>	
+		
+		<div>
+			<label for="email">&nbsp; &nbsp; &nbsp; &nbsp;Correo Electronico:</label>
+    		<input name="email" type="email" disabled="disabled" id="email" placeholder="Correo electronico">
+		</div>
+	 
+		<div>
+			<label for="NSS">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NSS:</label>
+    		<input name="NSS" type="number" disabled="disabled" id="NSS" placeholder="NSS">
+		</div>	
+		
+		<h3>Selecciona tu género:</h3>
+    		<div class="opcion-genero">
+        		<input name="genero" type="radio" disabled="disabled" id="hombre" value="Hombre">
+        		<p>Hombre</p>
+    		</div>
+		
+    		<div class="opcion-genero">
+        		<input name="genero" type="radio" disabled="disabled" id="mujer" value="Mujer">
+        		<p>Mujer</p>
+    		</div>
+		
+    		<div class="opcion-genero">
+        		<input name="genero" type="radio" disabled="disabled" id="otro" value="Otro">
+        		<p>Otro</p>
+    		</div>
+		<button class="boton1">Eliminar</button>
+	  <button class="boton2">Modificar</button>
+		
+	</div>
+</body>
+</html>

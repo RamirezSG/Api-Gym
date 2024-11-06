@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Punto de Venta</title>
+    <link href="css/PuntoV.css" rel="stylesheet" type="text/css">
+	<script src="js/punto de venta.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Sistema de Punto de Venta</h1>
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="products-section">
+                <input type="text" class="search-bar" id="searchProducts" placeholder="Buscar productos...">
+                <div class="product-grid" id="productGrid">
+                    <!-- Los productos se cargarán dinámicamente -->
+                </div>
+            </div>
+
+            <div class="cart-section">
+                <h2>Carrito de Compras</h2>
+                <div class="cart-items" id="cartItems">
+                    <!-- Los items del carrito se cargarán dinámicamente -->
+                </div>
+                <div class="total" id="total">Total: $0.00</div>
+                <div class="controls">
+                    <button class="btn btn-primary" id="checkoutBtn">Procesar Venta</button>
+                    <button class="btn btn-primary" id="clearCartBtn">Limpiar Carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

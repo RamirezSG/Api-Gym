@@ -1,0 +1,222 @@
+@charset "utf-8";
+body{
+	font-style: italic;
+    color: #000000;
+	background: linear-gradient(90deg, #000000 1%, #efb810 90%);
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 24px;
+}
+.container.menu{
+    height: auto;
+    /*cuadrado gris*/
+    position: relative;
+    background: #959595;
+    box-shadow: 17px 17px 34px #a6a814, -17px -17px 34px #eef21c; /*iluminado amarillo */
+    border-radius: 30px;
+    text-align: center;
+    width: 500px; /*ancho*/
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-size: 12px;/*tamaño de fuente reducido*/
+    top: -2px; /*posicion ajustada*/
+    left: 242px;
+    bottom: auto;
+}
+/*buscador*/
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 21px;
+    left: 123px;
+}
+
+.input {
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 18px 16px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    top: 25px;
+}
+
+.input::placeholder {
+  color: transparent;
+}
+
+.input:focus::placeholder {
+  color: rgb(131, 128, 128);
+}
+
+.input:focus,.input:not(:placeholder-shown) {
+  background-color: #fff;
+  border: 1px solid rgb(91, 107, 255);
+  width: 290px;
+  cursor: none;
+  padding: 18px 16px 18px 45px;
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  height: 45px;
+  width: 45px;
+  background-color: #fff;
+  border-radius: 99px;
+  z-index: -1;
+  fill: rgb(91, 107, 255);
+  border: 1px solid rgb(91, 107, 255);
+}
+
+.input:focus + .icon,.input:not(:placeholder-shown) + .icon {
+  z-index: 0;
+  background-color: transparent;
+  border: none;
+} /*fin del buscador*/
+
+.raton2{ /*imagen*/
+    position: relative;
+    width: 358px; /*anocho*/
+    left: -845px;
+    top: -500px;
+    right: 60px;
+    bottom: 50px;
+    float: right;
+}
+ 
+.download-button { /* boton de modificar */
+    position: relative;
+    border-width: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 1;
+    left: -70px;
+}
+
+.download-button .docs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 40px;
+    padding: 0 10px;
+    border-radius: 4px;
+    z-index: 1;
+    background-color: #242a35;
+    border: solid 1px #e8e8e82d;
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover {
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.download {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: -1;
+  border-radius: 4px;
+  transform: translateY(0%);
+  background-color: #01e056;
+  border: solid 1px #01e0572d;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover .download {
+  transform: translateY(100%);
+}
+
+.download svg polyline,
+.download svg line {
+  animation: docs 1s infinite;
+}
+
+@keyframes docs {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(-15%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}  /*fin del boton modificar*/
+
+ /*BOTON DE BORRAR*/
+.button2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+    position: relative;
+    left: 305px;
+    top: -43px;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: .3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button2:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: .3s;
+  background-color: rgb(255, 69, 69);
+  align-items: center;
+}
+
+.button2:hover .svgIcon {
+  width: 50px;
+  transition-duration: .3s;
+  transform: translateY(60%);
+}
+
+.button2::before {
+  position: absolute;
+  top: -20px;
+  content: "Delete";
+  color: white;
+  transition-duration: .3s;
+  font-size: 2px;
+}
+
+.button2:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  transform: translateY(30px);
+  transition-duration: .3s;
+}
+/*FIN DE BOTON DE ELIMINAR*/

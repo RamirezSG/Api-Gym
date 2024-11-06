@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Interfaz9</title>
+<link href="css/Empleado.css" rel="stylesheet" type="text/css">
+</head>
+
+	 
+	<script src= "js/Empleado.js"></script>
+	<script src= "js/EmpleadoMostrar.js"></script>
+<body>
+
+<div class="circulo"></div>
+	<h1>Empleado</h1>
+	<p>Gracias por ser parte de nuestro equipo !!!</p>
+<img src="Imagenes/ima2.png" width="400" height="550" alt=""/>
+	<button class="boton1" onclick="irAlContenedor()"> Agregar</button>
+<img src="Imagenes/icon1.png" alt="" width="50" height="51" class="icono1"/>
+	<button class="boton2" onclick="IrAEmpleadoMostrar()"> Mostrar</button>
+	<img src="Imagenes/icon2.png" alt="" width="60" height="61" class="icono2"/> 
+	
+	<div id="mi-contenedor" class="contenedor fade-in">
+    	<img src="Imagenes/icon3.png" alt="" width="60" height="61" class="icono3"/> 
+		<!-- Inputs agregados al contenedor -->
+		<div>
+			<label for="Id del empleado">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Id del empleado:</label>
+    		<input type="text" id="Id del empleado" name="Id del empleado" placeholder="Ingresa tu Id de empleado">
+		</div>
+		
+    	<div>
+			<label for="nombre">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Nombre:</label>
+    		<input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+		</div>	
+		
+		<div>
+    		<label for="Apellido Paterno">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Apellido Paterno:</label>
+   			<input type="text" id="Apellido Paterno" name="Apellido Paterno" placeholder="Ingresa tu Apellido Paterno">
+		
+	
+			<label for="Apellido Materno">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Apellido Materno:</label>
+    		<input type="text" id="Apellido Materno" name="Apellido Materno" placeholder="Ingresa tu Apellido Materno">
+		</div>
+		
+		<div>
+    		<label for="Cargo">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Cargo:</label>
+    		<input type="text" id="Cargo" name="Cargo" placeholder="Escribe el Cargo">
+		</div>
+		
+		<div>	
+			<label for="Sueldo">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Sueldo:</label>
+    		<input type="text" id="Sueldo" name="Sueldo" placeholder="Ingresa el Sueldo establecido">
+		</div>	
+
+    	<div>
+			<label for="Telefono">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Telefono:</label>
+    		<input type="tel" id="Telefono" name="Telefono" placeholder="Ingresa tu Telefono personal">
+
+			<label for="Telefono de emergencia">&nbsp;Telefono de emergencia:</label>
+    		<input type="tel" id="Telefono de emergencia" name="Telefono de emergencia" placeholder="Ingresa tu Telefono de emergencia">
+		</div>
+   
+		<div>
+			<label for="Direccion">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Direccion:</label>
+    		<input type="text" id="Direccion" name="Direccion" placeholder="Escribe un Direccion">
+		</div>
+	   
+		<div>
+	   		<label for="Fecha de Nacimiento">&nbsp; &nbsp;Fecha de Nacimiento:</label>
+    		<input type="date" id="Fecha de Nacimiento" name="Fecha de Nacimiento" placeholder="Escribe tu Fecha de Nacimiento">
+		</div>	
+		
+		<div>
+			<label for="email">Correo Electronico:</label>
+    		<input type="email" id="email" name="email" placeholder="Escribe tu correo electronico">
+		</div>
+	 
+		<div>
+			<label for="NSS">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NSS:</label>
+    		<input type="number" id="NSS" name="NSS" placeholder="Escribe tu NSS">
+		</div>	
+		
+		<h3>Selecciona tu género:</h3>
+    		<div class="opcion-genero">
+        		<input type="radio" id="hombre" name="genero" value="Hombre">
+        		<p>Hombre</p>
+    		</div>
+		
+    		<div class="opcion-genero">
+        		<input type="radio" id="mujer" name="genero" value="Mujer">
+        		<p>Mujer</p>
+    		</div>
+		
+    		<div class="opcion-genero">
+        		<input type="radio" id="otro" name="genero" value="Otro">
+        		<p>Otro</p>
+    		</div>
+		
+		<button class="boton3"> Añadir</button>
+		 	
+
+	</div>
+		
+</body>
+</html>
